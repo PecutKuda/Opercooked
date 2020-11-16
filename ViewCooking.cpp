@@ -80,12 +80,13 @@ void displayTime()
             historyDessert[totalHDessert].price = orderDessert[i].menuPrice;
             profit += orderDessert[i].menuPrice;
             //Tambahin order time
-            historyDessert[i].ordertime.year = orderDessert[i].ordertime.year;
-            historyDessert[i].ordertime.month = orderDessert[i].ordertime.month;
-            historyDessert[i].ordertime.date = orderDessert[i].ordertime.date;
-            historyDessert[i].ordertime.hour = orderDessert[i].ordertime.hour;
-            historyDessert[i].ordertime.min = orderDessert[i].ordertime.min;
-            historyDessert[i].ordertime.sec = orderDessert[i].ordertime.sec;
+            historyDessert[totalHDessert].ordertime.year = orderDessert[i].ordertime.year;
+            historyDessert[totalHDessert].ordertime.month = orderDessert[i].ordertime.month;
+            historyDessert[totalHDessert].ordertime.date = orderDessert[i].ordertime.date;
+            historyDessert[totalHDessert].ordertime.hour = orderDessert[i].ordertime.hour;
+            historyDessert[totalHDessert].ordertime.min = orderDessert[i].ordertime.min;
+            historyDessert[totalHDessert].ordertime.sec = orderDessert[i].ordertime.sec;
+            totalHDessert++;
         }
     }
 
@@ -100,12 +101,13 @@ void displayTime()
             historyDrink[totalHDrink].price = orderDrink[i].menuPrice;
             profit += orderDrink[i].menuPrice;
             //Tambahin order time
-            historyDrink[i].ordertime.year = orderDrink[i].ordertime.year;
-            historyDrink[i].ordertime.month = orderDrink[i].ordertime.month;
-            historyDrink[i].ordertime.date = orderDrink[i].ordertime.date;
-            historyDrink[i].ordertime.hour = orderDrink[i].ordertime.hour;
-            historyDrink[i].ordertime.min = orderDrink[i].ordertime.min;
-            historyDrink[i].ordertime.sec = orderDrink[i].ordertime.sec;
+            historyDrink[totalHDrink].ordertime.year = orderDrink[i].ordertime.year;
+            historyDrink[totalHDrink].ordertime.month = orderDrink[i].ordertime.month;
+            historyDrink[totalHDrink].ordertime.date = orderDrink[i].ordertime.date;
+            historyDrink[totalHDrink].ordertime.hour = orderDrink[i].ordertime.hour;
+            historyDrink[totalHDrink].ordertime.min = orderDrink[i].ordertime.min;
+            historyDrink[totalHDrink].ordertime.sec = orderDrink[i].ordertime.sec;
+            totalHDrink++;
         }
     }
     ///////////////////////////////////////////////////////////////////
